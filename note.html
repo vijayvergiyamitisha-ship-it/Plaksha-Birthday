@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Secret Note 🔒</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>🔐 Author's Secret Note</h1>
+
+  <p class="subtitle">
+    Enter the secret code to unlock the message
+  </p>
+
+  <input type="password" id="codeInput" placeholder="Enter code" style="padding:10px;border-radius:10px;border:none;">
+  <button onclick="checkCode()" class="btn">Unlock</button>
+
+  <div id="secretMessage" style="display:none; margin-top:30px;">
+    <h2>💌 For Plaksha 💌</h2>
+    <p>
+      You are genuinely one of the most special people I have ever met.
+      You are love, chaos, comfort, power and madness in one human form.
+      I’m so grateful you exist and even more grateful
+      that you’re MY best friend.
+      <br><br>
+      Happy birthday, my universe. 🌙
+    </p>
+  </div>
+
+  <br><br>
+  <a href="her.html" class="btn">← Back</a>
+</div>
+
+<script>
+function checkCode(){
+  const correctCode = "Mitishaisthebest";
+  const input = document.getElementById("codeInput").value;
+
+  if(input === correctCode){
+    document.getElementById("secretMessage").style.display = "block";
+  } else {
+    alert("Wrong code 😌");
+  }
+}
+</script>
+
+</body>
+</html>
